@@ -150,13 +150,13 @@ variable "instance_class" {
 variable "db_name" {
   description = "The DB name to create. If omitted, no database is created initially"
   type        = string
-  default     = null
+  default     = "dbtest"
 }
 
 variable "username" {
   description = "Username for the master DB user"
   type        = string
-  default     = null
+  default     = "testu"
 }
 
 variable "password" {
@@ -165,7 +165,7 @@ variable "password" {
   The password provided will not be used if `manage_master_user_password` is set to true.
   EOF
   type        = string
-  default     = null
+  default     = "Test1234$"
   sensitive   = true
 }
 
